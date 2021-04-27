@@ -1,0 +1,30 @@
+[tool.poetry]
+authors = ["Ryan Boris <ryan.boris@gmail.com>"]
+description = "a demo app with wikipedia api"
+homepage = "https://github.com/secantsquared/wikiapi"
+keywords = ["wikipedia", "demo", "python3.9"]
+license = "MIT"
+name = "wikiapi"
+readme = "README.md"
+repository = "https://github.com/secantsquared/wikiapi"
+version = "0.0.1"
+
+[tool.poetry.dependencies]
+click = "^7.1.2"
+python = "^3.9"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5.6"
+flake8 = "^3.9.1"
+ipdb = "^0.13.7"
+ipython = "^7.22.0"
+isort = "^5.8.0"
+mypy = "^0.812"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.poetry.scripts]
+wikiapi = "wikiapi.console:main"
